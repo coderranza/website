@@ -263,6 +263,12 @@ hr.major {
   margin: 3em 0;
 }
 
+.white-space {
+  height: 100;
+  background-color: white;
+  margin-bottom: 60px;
+}
+
 .align-left {
   text-align: left;
 }
@@ -2626,6 +2632,7 @@ body.is-menu-visible #menu .close {
   padding-left: 0;
   margin-left: 0;
 }
+
 @media screen and (max-width: 1280px) {
   #footer {
     padding: 5em 0 3em 0;
