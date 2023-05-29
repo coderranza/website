@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
 @font-face {
   font-family: 'Coolvetica';
   src: url('fonts/coolvetica-rg.otf') format('opentype');
@@ -106,6 +108,7 @@ main img {
   letter-spacing: 2px;
   color: #a4303f;
   padding-left: 16px;
+  padding-right: 16px;
   margin-bottom: 100px;
 }
 
@@ -269,4 +272,117 @@ main img {
   }
 }
 
+.toggle {
+  margin-bottom: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.toggle-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px 0px 20px;
+  cursor: pointer;
+  background-color: #e9b44c;
+  border-radius: 5px;
+}
+
+.toggle-header .material-icons {
+  color: #231f20; 
+}
+
+
+.toggle-icon {
+  font-size: 16px;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.rol-company{
+  font-size: 18px;
+  color: #f0f0f0;
+}
+
+.dates {
+  font-size: 18px;
+  color: #f0f0f0;
+}
+
+.toggle-content {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #231f20;
+  border-radius: 5px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease;
+}
+
+.toggle-content.active {
+  display: block;
+  max-height: 100px;
+  transition: max-height 0.3s ease;
+}
+
+.toggle-content .material-icons {
+  vertical-align: middle;
+  margin-right: 5px;
+  color: #7286a0;
+}
+
+.toggle-content p.location i.material-icons {
+  margin-right: 5px;
+}
+
+.card-experience {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  padding: 5px;
+}
+
+.card-content {
+  flex: 1;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  padding: 0;
+}
+
+.location {
+  margin: 0;
+  font-weight: bold;
+  font-size: 16px;
+  color: #f0f0f0;
+}
+
+.activities {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #f0f0f0;
+}
+
+.tags {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.tag{
+  background-color: #a4303f;
+  color:#f0f0f0;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+}
 
