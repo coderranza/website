@@ -386,3 +386,99 @@ main img {
   padding: 10px;
 }
 
+.achievements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.achievement{
+  width: calc(50% - 20px);
+  margin-bottom: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.achievement:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.achievement-content {
+  position: absolute;
+  color:#fff;
+  padding: 15px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.achievement:hover .achievement-content {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.achievement .achievement-content{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color:#231f20;
+  color: #fff;
+}
+
+.achievement-title{
+  font-size: 20px;
+  color: #fff;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.achievement-subtitle {
+  color: #fff;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .achievement {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .achievement {
+    width: calc(100% - 20px);
+  }
+}
+
+.achievement img {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .achievement {
+    width: calc(50% - 20px);
+  }
+}
+
+.hidden-description {
+  display: none;
+  font-size: 12px;
+}
+
+.achievement:hover .hidden-description {
+  display: block;
+}
