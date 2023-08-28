@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 @font-face {
@@ -17,6 +18,14 @@ h3 {
   font-family: 'Montserrat', sans-serif;
 }
 
+h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h5 {
+  font-family: 'Montserrat', sans-serif;
+}
+
 p {
   font-family: 'Montserrat', sans-serif;
 }
@@ -27,7 +36,7 @@ p {
 }
 
 .hi-message{
-  font-size: 32px;
+  font-size: 36px;
   letter-spacing: 4px;
   color: #f4fffd;
 }
@@ -41,6 +50,10 @@ p {
   font-size: 18px;
   color: #7286a0;
   letter-spacing: 10px;
+}
+
+.header5{
+  font-size: 25px;
 }
 
 .header2-table {
@@ -72,9 +85,14 @@ p {
 }
 
 .title{
-  font-size: 48px;
-  letter-spacing: 4px;
+  font-size: 124px;
+  letter-spacing: 18px;
   color: #a4303f;
+}
+
+.container{
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 header {
@@ -100,7 +118,7 @@ main img {
   justify-content: center;
   text-align: center;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .sections {
@@ -110,6 +128,12 @@ main img {
   padding-left: 16px;
   padding-right: 16px;
   margin-bottom: 100px;
+}
+
+.title-section{
+  font-size: 56px;
+  letter-spacing: 6px;
+  text-align: center;
 }
 
 .welcome {
@@ -126,6 +150,7 @@ main img {
   text-align: center;
 }
 
+
 .table {
   display: flex;
   border-collapse: separate;
@@ -134,6 +159,8 @@ main img {
   justify-content: space-between;
   padding-left: 100px;
   padding-right: 100px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 .row {
@@ -143,7 +170,7 @@ main img {
 .column {
   flex: 1;
   padding: 10px;
-  border-right: 1px solid #7286a0;
+  border-right: 1px solid #7286a04f;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -233,10 +260,6 @@ main img {
   transition: transform 0.3s ease;
 }
 
-.card:hover img {
-  transform: scale(1.1);
-}
-
 .project-name {
   font-size: 20px;
   margin-top: 0px;
@@ -265,6 +288,52 @@ main img {
   color: #fff;
 }
 
+.project-name,
+.project-type {
+  font-size: 12px;
+  margin-top: 5px;
+  opacity: 1;
+}
+
+.card:hover .project-detail{
+  background-color: rgba(0, 0, 0, 0.9); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  top: 0;
+  margin: auto;
+}
+
+.card:hover .hidden-cardInfo {
+  display: block;
+  color: #fff;
+}
+
+.card .project-name,
+.card .project-type {
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.hidden-cardInfo {
+  display: none;
+  font-size: 12px;
+  margin: 12px;
+  align-content: center;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .project-name,
+.card:hover .project-type {
+  display: none;
+}
 
 @media screen and (max-width: 768px) {
   .card {
@@ -307,6 +376,8 @@ main img {
 .dates {
   font-size: 18px;
   color: #f0f0f0;
+  margin-left: auto;
+  padding-right: 18px;
 }
 
 .toggle-content {
@@ -401,7 +472,7 @@ main img {
   max-width: 400px;
   margin-bottom: 20px;
   height: auto;
-  text-align: left;
+  text-align: center;
   display: flex;
   flex-direction: column;
   position: relative;
