@@ -35,15 +35,23 @@ p {
   letter-spacing: 2px;
 }
 
-.hi-message{
-  font-size: 36px;
-  letter-spacing: 4px;
-  color: #f4fffd;
+@media (max-width: 768px) {
+  .header1{
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
 }
 
 .header2{
   font-size: 26px;
   color: #231f20;
+}
+
+@media (max-width: 768px) {
+  .header2{
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
 }
 
 .header3{
@@ -52,8 +60,21 @@ p {
   letter-spacing: 10px;
 }
 
+@media (max-width: 768px) {
+  .header3{
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+}
+
 .header5{
   font-size: 25px;
+}
+
+@media (max-width: 768px) {
+  .header5{
+    font-size: 10px;
+  }
 }
 
 .header2-table {
@@ -61,15 +82,67 @@ p {
   color: #231f20;
 }
 
+@media (max-width: 768px) {
+  .header2-table {
+    font-size: 14px;
+    color: #231f20;
+  }
+}
+
 .header3-table {
   font-size: 16px;
   color: #a4303f;
 }
 
+@media (max-width: 768px) {
+  .header3-table {
+    font-size: 10px;
+    color: #a4303f;
+  }
+}
+
 .paragraph-table{
   font-size: 16px;
   color: #000;
+}
 
+@media (max-width: 768px) {
+  .paragraph-table{
+    font-size: 10px;
+    color: #000;
+  }
+}
+
+#logo-header{
+  height: 70px;
+  width: 70px;
+}
+
+@media (max-width: 768px) {
+  #logo-header {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .avatar {
+    width: calc(50% - 20px);
+  }
+}
+
+.hi-message{
+  font-size: 36px;
+  letter-spacing: 4px;
+  color: #f4fffd;
+}
+
+@media (max-width: 768px) {
+  .hi-message{
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: #f4fffd;
+  }
 }
 
 .about-me {
@@ -78,6 +151,16 @@ p {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .about-me {
+    font-size: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .parrafo{
@@ -90,9 +173,24 @@ p {
   color: #a4303f;
 }
 
+@media (max-width: 768px) {
+  .title{
+    font-size: 36px;
+    letter-spacing: 8px;
+    color: #a4303f;
+  }
+}
+
 .container{
   margin-left: 50px;
   margin-right: 50px;
+}
+
+@media (max-width: 768px) {
+  .container{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }
 
 header {
@@ -121,6 +219,16 @@ main img {
   padding-top: 80px;
 }
 
+@media (max-width: 768px) {
+  .main-section{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 30px;
+  }
+}
+
 .sections {
   font-size: 28px;
   letter-spacing: 2px;
@@ -130,10 +238,29 @@ main img {
   margin-bottom: 100px;
 }
 
+@media (max-width: 768px) {
+  .sections {
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #a4303f;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-bottom: 100px;
+  }
+}
+
 .title-section{
   font-size: 56px;
   letter-spacing: 6px;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .title-section{
+    font-size: 36px;
+    letter-spacing: 2px;
+    text-align: center;
+  }
 }
 
 .welcome {
@@ -150,7 +277,6 @@ main img {
   text-align: center;
 }
 
-
 .table {
   display: flex;
   border-collapse: separate;
@@ -161,6 +287,16 @@ main img {
   padding-right: 100px;
   margin-left: 80px;
   margin-right: 80px;
+}
+
+@media (max-width: 768px) {
+  .table {
+    border-spacing: 2px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
 }
 
 .row {
@@ -188,6 +324,13 @@ main img {
   align-self: center;
 }
 
+@media (max-width: 768px) {
+  .column img{
+    width: 30px;
+    align-self: center;
+  }
+}
+
 .column h2{
   margin-top: 20px;
 }
@@ -207,11 +350,12 @@ main img {
 
 @media (max-width: 768px) {
   .skills {
-    flex-direction: column; /* Cambia a una disposición vertical en pantallas más pequeñas */
     align-items: flex-start; /* Alinea los elementos a la izquierda */
   }
   
   .skills img {
+    width: 25px;
+    height: 25px;
     margin-bottom: 10px; /* Añade un espacio entre los logos en pantallas más pequeñas */
   }
 }
@@ -224,6 +368,18 @@ main img {
   padding-right: 50px;
   margin-right: 100px;
   margin-left: 100px;
+}
+
+@media (max-width: 768px) {
+  .cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
 }
 
 .card {
@@ -266,9 +422,22 @@ main img {
   margin-bottom: 0px;
 }
 
+@media (max-width: 768px) {
+  .project-name {
+    font-size: 10px;
+  }
+}
+
 .project-type {
   font-size: 12px;
   margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .project-type {
+    font-size: 6px;
+    margin-top: 2px;
+  }
 }
 
 .project-detail{
@@ -293,6 +462,15 @@ main img {
   font-size: 12px;
   margin-top: 5px;
   opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .project-name,
+  .project-type {
+  font-size: 4px;
+  margin-top: 2px;
+  opacity: 1;
+  }
 }
 
 .card:hover .project-detail{
@@ -330,6 +508,18 @@ main img {
   transition: opacity 0.3s ease;
 }
 
+@media (max-width: 768px) {
+  .hidden-cardInfo {
+    display: none;
+    font-size: 4px;
+    margin: 6px;
+    align-content: center;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+}
+
 .card:hover .project-name,
 .card:hover .project-type {
   display: none;
@@ -347,6 +537,14 @@ main img {
   padding-right: 100px;
 }
 
+@media (max-width: 768px) {
+  .toggle {
+    margin-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 .toggle-header {
   display: flex;
   justify-content: space-between;
@@ -355,6 +553,12 @@ main img {
   cursor: pointer;
   background-color: #e9b44c;
   border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .toggle-header {
+    padding: 0px 8px 0px 8px;
+  }
 }
 
 .toggle-header .material-icons {
@@ -373,11 +577,27 @@ main img {
   color: #f0f0f0;
 }
 
+@media (max-width: 768px) {
+  .rol-company{
+    font-size: 10px;
+    color: #f0f0f0;
+  }
+}
+
 .dates {
   font-size: 18px;
   color: #f0f0f0;
   margin-left: auto;
   padding-right: 18px;
+}
+
+@media (max-width: 768px) {
+  .dates {
+    font-size: 10px;
+    color: #f0f0f0;
+    margin-left: auto;
+    padding-right: 8px;
+  }
 }
 
 .toggle-content {
@@ -426,11 +646,24 @@ main img {
   padding: 0;
 }
 
+@media (max-width: 768px) {
+  .logo {
+    width: calc(50% - 30px);
+    height: calc(50% - 30px);
+  }
+}
+
 .location {
   margin: 0;
   font-weight: bold;
   font-size: 16px;
   color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .location {
+    font-size: 8px;
+  }
 }
 
 .activities {
@@ -439,12 +672,25 @@ main img {
   color: #f0f0f0;
 }
 
+@media (max-width: 768px) {
+  .activities {
+    font-size: 8px;
+  }
+}
+
 .tags {
   font-family: 'Montserrat', sans-serif;
   display: flex;
   flex-wrap: wrap;
   margin-top: 20px;
   font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .tags {
+    margin-top: 10px;
+    font-size: 6px;
+  }
 }
 
 .tag{
@@ -457,6 +703,16 @@ main img {
   padding: 10px;
 }
 
+@media (max-width: 768px) {
+  .tag{
+    padding: 2px 5px;
+    border-radius: 20px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    padding: 5px;
+  }
+}
+
 .achievements {
   display: flex;
   flex-wrap: wrap;
@@ -465,6 +721,15 @@ main img {
   padding-right: 50px;
   margin-right: 100px;
   margin-left: 100px;
+}
+
+@media (max-width: 768px) {
+  .achievements {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
 }
 
 .achievement{
@@ -520,9 +785,21 @@ main img {
   margin-bottom: 0px;
 }
 
+@media (max-width: 768px) {
+  .achievement-title{
+    font-size: 8px;
+  }
+}
+
 .achievement-subtitle {
   color: #fff;
   font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .achievement-subtitle {
+    font-size: 4px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -575,6 +852,15 @@ main img {
   margin: 12px;
   align-content: center;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hidden-description {
+    font-size: 4px;
+    margin: 6px;
+    align-content: center;
+    text-align: center;
+  }
 }
 
 .achievement:hover .hidden-description {
