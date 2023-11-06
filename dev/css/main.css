@@ -30,6 +30,57 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
+#resume {
+  margin-top: 32px;
+  background-color: #a4303f;
+  border-radius: 8px;
+  border-style: none;
+  color: #f4fffd;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  outline: none;
+  padding: 10px 16px;
+  text-align: center;
+  margin-right: 16px;
+}
+
+@media (max-width: 768px) {
+  #resume {
+    margin-top: 12px;
+    border-radius: 8px;
+    font-size: 8px;
+    padding: 8px 14px;
+    margin-right: 14px;
+  }
+}
+
+#resume:hover,
+#resume:focus {
+  background-color: #e9b44c;
+  color: #231f20;
+}
+
+.options{
+  display:flex;
+  justify-content: right;
+  align-items:end;
+  flex-wrap: wrap;
+}
+
+#logo-linkedin{
+  height: 30px;
+  width: 30px;
+}
+
+@media (max-width: 768px) {
+  #logo-linkedin{
+    height: 20px;
+    width: 20px;
+  }
+}
+
+
 .header1{
   font-size: 32px;
   letter-spacing: 2px;
@@ -114,6 +165,11 @@ p {
 }
 
 #logo-header{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 70px;
+  height: auto;
   height: 70px;
   width: 70px;
 }
@@ -198,14 +254,6 @@ header {
   text-align: center;
 }
 
-header img {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 70px;
-  height: auto;
-}
-
 main img {
   padding-top: 50px;
   width: 200px;
@@ -216,7 +264,7 @@ main img {
   justify-content: center;
   text-align: center;
   align-items: center;
-  padding-top: 80px;
+  padding-top: 60px;
 }
 
 @media (max-width: 768px) {
