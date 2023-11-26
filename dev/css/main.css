@@ -10,32 +10,16 @@ h1 {
   font-family: 'Coolvetica', sans-serif;
 }
 
-h2 {
-  font-family: 'Montserrat', sans-serif;
-}
-
-h3 {
-  font-family: 'Montserrat', sans-serif;
-}
-
-h4 {
-  font-family: 'Montserrat', sans-serif;
-}
-
-h5 {
-  font-family: 'Montserrat', sans-serif;
-}
-
-p {
+h2, h3, h4, h5, p {
   font-family: 'Montserrat', sans-serif;
 }
 
 #resume {
   margin-top: 32px;
-  background-color: #a4303f;
+  background-color: #f06543;
   border-radius: 8px;
   border-style: none;
-  color: #f4fffd;
+  color: #FFFFFF;
   cursor: pointer;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
@@ -48,7 +32,6 @@ p {
 @media (max-width: 768px) {
   #resume {
     margin-top: 12px;
-    border-radius: 8px;
     font-size: 8px;
     padding: 8px 14px;
     margin-right: 14px;
@@ -57,8 +40,8 @@ p {
 
 #resume:hover,
 #resume:focus {
-  background-color: #e9b44c;
-  color: #231f20;
+  background-color: #ef968f;
+  color: #FFFFFF;
 }
 
 .options{
@@ -80,10 +63,10 @@ p {
   }
 }
 
-
 .header1{
   font-size: 32px;
   letter-spacing: 2px;
+  color: #313638;
 }
 
 @media (max-width: 768px) {
@@ -95,7 +78,7 @@ p {
 
 .header2{
   font-size: 26px;
-  color: #231f20;
+  color: #f06543;
 }
 
 @media (max-width: 768px) {
@@ -107,7 +90,7 @@ p {
 
 .header3{
   font-size: 18px;
-  color: #7286a0;
+  color: #676868;
   letter-spacing: 10px;
 }
 
@@ -130,37 +113,34 @@ p {
 
 .header2-table {
   font-size: 24px;
-  color: #231f20;
+  color: #313638;
 }
 
 @media (max-width: 768px) {
   .header2-table {
     font-size: 14px;
-    color: #231f20;
   }
 }
 
 .header3-table {
   font-size: 16px;
-  color: #a4303f;
+  color: #f06543;
 }
 
 @media (max-width: 768px) {
   .header3-table {
     font-size: 10px;
-    color: #a4303f;
   }
 }
 
 .paragraph-table{
   font-size: 16px;
-  color: #000;
+  color: #676868;
 }
 
 @media (max-width: 768px) {
   .paragraph-table{
     font-size: 10px;
-    color: #000;
   }
 }
 
@@ -190,19 +170,19 @@ p {
 .hi-message{
   font-size: 36px;
   letter-spacing: 4px;
-  color: #f4fffd;
+  color: #FFFFFF;
 }
 
 @media (max-width: 768px) {
   .hi-message{
     font-size: 24px;
     letter-spacing: 2px;
-    color: #f4fffd;
   }
 }
 
 .about-me {
   font-size: 16px;
+  color: #313638;
   width: 100%;
   max-width: 600px;
   margin-left: auto;
@@ -212,10 +192,6 @@ p {
 @media (max-width: 768px) {
   .about-me {
     font-size: 10px;
-    width: 100%;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -226,14 +202,13 @@ p {
 .title{
   font-size: 124px;
   letter-spacing: 18px;
-  color: #a4303f;
+  color: #f09d51;
 }
 
 @media (max-width: 768px) {
   .title{
     font-size: 36px;
     letter-spacing: 8px;
-    color: #a4303f;
   }
 }
 
@@ -269,10 +244,6 @@ main img {
 
 @media (max-width: 768px) {
   .main-section{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
     padding-top: 30px;
   }
 }
@@ -280,7 +251,7 @@ main img {
 .sections {
   font-size: 28px;
   letter-spacing: 2px;
-  color: #a4303f;
+  color: #f06543;
   padding-left: 16px;
   padding-right: 16px;
   margin-bottom: 100px;
@@ -290,10 +261,8 @@ main img {
   .sections {
     font-size: 18px;
     letter-spacing: 1px;
-    color: #a4303f;
     padding-left: 4px;
     padding-right: 4px;
-    margin-bottom: 100px;
   }
 }
 
@@ -307,7 +276,6 @@ main img {
   .title-section{
     font-size: 36px;
     letter-spacing: 2px;
-    text-align: center;
   }
 }
 
@@ -317,7 +285,7 @@ main img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e9b44c;
+  background-color: #f09d51;
   margin-top: 100px;
   margin-bottom: 100px;
   padding-top: 50px;
@@ -375,7 +343,6 @@ main img {
 @media (max-width: 768px) {
   .column img{
     width: 30px;
-    align-self: center;
   }
 }
 
@@ -420,9 +387,6 @@ main img {
 
 @media (max-width: 768px) {
   .cards-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     padding-left: 10px;
     padding-right: 10px;
     margin-right: 20px;
@@ -490,8 +454,8 @@ main img {
 
 .project-detail{
   position: absolute;
-  background-color: #231f20;
-  color:#fff;
+  background-color: #313638;
+  color:#FFFFFF;
   padding: 15px;
 }
 
@@ -501,8 +465,8 @@ main img {
   left: 0;
   right: 0;
   padding: 10px;
-  background-color:#231f20;
-  color: #fff;
+  background-color:#313638;
+  color: #FFFFFF;
 }
 
 .project-name,
@@ -517,7 +481,6 @@ main img {
   .project-type {
   font-size: 4px;
   margin-top: 2px;
-  opacity: 1;
   }
 }
 
@@ -534,7 +497,7 @@ main img {
 
 .card:hover .hidden-cardInfo {
   display: block;
-  color: #fff;
+  color: #FFFFFF;
 }
 
 .card .project-name,
@@ -558,13 +521,8 @@ main img {
 
 @media (max-width: 768px) {
   .hidden-cardInfo {
-    display: none;
     font-size: 4px;
     margin: 6px;
-    align-content: center;
-    text-align: center;
-    opacity: 1;
-    transition: opacity 0.3s ease;
   }
 }
 
@@ -599,7 +557,7 @@ main img {
   align-items: center;
   padding: 0px 20px 0px 20px;
   cursor: pointer;
-  background-color: #e9b44c;
+  background-color: #f09d51;
   border-radius: 5px;
 }
 
@@ -610,31 +568,30 @@ main img {
 }
 
 .toggle-header .material-icons {
-  color: #231f20; 
+  color: #313638; 
 }
 
 
 .toggle-icon {
   font-size: 16px;
-  color: #fff;
+  color: #FFFFFF;
   transition: transform 0.3s ease;
 }
 
 .rol-company{
   font-size: 18px;
-  color: #f0f0f0;
+  color: #FFFFFF;
 }
 
 @media (max-width: 768px) {
   .rol-company{
     font-size: 10px;
-    color: #f0f0f0;
   }
 }
 
 .dates {
   font-size: 18px;
-  color: #f0f0f0;
+  color: #FFFFFF;
   margin-left: auto;
   padding-right: 18px;
 }
@@ -642,8 +599,6 @@ main img {
 @media (max-width: 768px) {
   .dates {
     font-size: 10px;
-    color: #f0f0f0;
-    margin-left: auto;
     padding-right: 8px;
   }
 }
@@ -652,7 +607,7 @@ main img {
   display: none;
   margin-top: 10px;
   padding: 10px;
-  background-color: #231f20;
+  background-color: #313638;
   border-radius: 5px;
   overflow: hidden;
   max-height: 0;
@@ -668,7 +623,7 @@ main img {
 .toggle-content .material-icons {
   vertical-align: middle;
   margin-right: 5px;
-  color: #7286a0;
+  color: #676868;
 }
 
 .toggle-content p.location i.material-icons {
@@ -705,7 +660,7 @@ main img {
   margin: 0;
   font-weight: bold;
   font-size: 16px;
-  color: #f0f0f0;
+  color: #FFFFFF;
 }
 
 @media (max-width: 768px) {
@@ -717,7 +672,7 @@ main img {
 .activities {
   margin-bottom: 5px;
   font-size: 16px;
-  color: #f0f0f0;
+  color: #FFFFFF;
 }
 
 @media (max-width: 768px) {
@@ -742,8 +697,8 @@ main img {
 }
 
 .tag{
-  background-color: #a4303f;
-  color:#f0f0f0;
+  background-color: #f06543;
+  color:#FFFFFF;
   padding: 5px 10px;
   border-radius: 20px;
   margin-right: 5px;
@@ -754,7 +709,6 @@ main img {
 @media (max-width: 768px) {
   .tag{
     padding: 2px 5px;
-    border-radius: 20px;
     margin-right: 2px;
     margin-bottom: 2px;
     padding: 5px;
@@ -801,7 +755,7 @@ main img {
 
 .achievement-content {
   position: absolute;
-  color:#fff;
+  color:#FFFFFF;
   padding: 15px;
   background-color: transparent;
   transition: background-color 0.3s ease;
@@ -822,13 +776,13 @@ main img {
   left: 0;
   right: 0;
   padding: 10px;
-  background-color:#231f20;
-  color: #fff;
+  background-color:#313638;
+  color: #FFFFFF;
 }
 
 .achievement-title{
   font-size: 20px;
-  color: #fff;
+  color: #FFFFFF;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -840,7 +794,7 @@ main img {
 }
 
 .achievement-subtitle {
-  color: #fff;
+  color: #FFFFFF;
   font-size: 12px;
 }
 
@@ -879,7 +833,7 @@ main img {
 
 .achievement-content .achievement-title,
 .achievement-content .achievement-subtitle {
-  color: #fff;
+  color: #FFFFFF;
   margin: 0;
   transition: opacity 0.3s ease;
 }
@@ -913,5 +867,5 @@ main img {
 
 .achievement:hover .hidden-description {
   display: block;
-  color: #fff;
+  color: #FFFFFF;
 }
